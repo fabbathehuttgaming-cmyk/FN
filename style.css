@@ -1,0 +1,41 @@
+.body {
+    background: linear-gradient(135deg, #c0c0c0 25%, transparent 25%, transparent 75%, #c0c0c0 75%, #c0c0c0), 
+                linear-gradient(225deg, #c0c0c0 25%, transparent 25%, transparent 75%, #c0c0c0 75%, #c0c0c0);
+    background-size: 20px 20px;
+    animation: backgroundAnimation 1s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffcc00;
+    text-shadow: 2px 2px #0a0a0a;
+}
+
+.button {
+    background-color: #ffcc00;
+    border: 2px solid #0a0a0a;
+    color: #0a0a0a;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0a0a0a;
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.footer {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    background: #0a0a0a;
+}
