@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro PS2 Emulator Frontend</title>
+    <style>
+        body {
+            background: url('background-animation.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #00FF00; /* Classic green text */
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20%;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .menu {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-item {
+            margin: 15px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Retro PS2 Emulator</h1>
+    <div class="menu">
+        <div class="menu-item">Start Game</div>
+        <div class="menu-item">Load Game</div>
+        <div class="menu-item">Settings</div>
+        <div class="menu-item">Exit</div>
+    </div>
+</body>
+</html>
